@@ -96,7 +96,7 @@ router.post('/lastest', function (req, res, next) {
 router.post('/posting', function (req, res, next) {
 		var notice = new Notice({
                     		id: req.body.id,
-                        		time: Date.now,
+                        		time:  req.body.time,
                         		title: req.body.title,
                         		image: req.body.image,
                         		name: req.body.name,
